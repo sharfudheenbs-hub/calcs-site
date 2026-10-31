@@ -44,11 +44,11 @@
 <p>There is no account, no sign-in and no profile.</p>
 
 <h2>The one network request: exchange rates</h2>
-<p>The Currency tool includes exchange rates that ship inside the app, so it works offline. If you tap <strong>Update rates now</strong>, or if you leave <strong>Auto update on Wi-Fi</strong> on and the rates are more than about 12 hours old and you are on Wi-Fi, the app downloads current rates from a public rates service (<code>open.er-api.com</code>, run by ExchangeRate-API).</p>
+<p>The Currency tool includes exchange rates that ship inside the app, so it works offline. If you tap <strong>Update rates now</strong>, or if you leave <strong>Auto update</strong> on (it is on by default) and the rates are more than about 12 hours old when you open the app, the app downloads current rates from a public rates service (<code>open.er-api.com</code>, run by ExchangeRate-API).</p>
 <ul>
   <li>The request asks only for the public table of rates. It contains <strong>no personal information, no account, no advertising or device identifier</strong>, and nothing you typed.</li>
   <li>Like any request on the internet, the service you contact can see your device's IP address and ordinary connection details. Calcs does not receive or see that information, and has no server of its own. How that service handles it is described by its own terms and privacy policy at exchangerate-api.com.</li>
-  <li>You control this: turn on <strong>Update only when I tap</strong> in the Currency settings and the app never downloads anything by itself. If you never update, the app never uses the internet at all.</li>
+  <li>You control this: turn on <strong>Wi-Fi only</strong> in the Currency settings to keep it off mobile data, or turn on <strong>Update only when I tap</strong> and the app never downloads anything by itself. If you never update, the app never uses the internet at all.</li>
 </ul>
 <p>To do this the app asks Android for two permissions: <code>INTERNET</code> (to download the rates) and <code>ACCESS_NETWORK_STATE</code> (to tell Wi-Fi from mobile data).</p>
 
